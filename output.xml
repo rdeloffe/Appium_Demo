@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-14T11:38:51.891153" rpa="false" schemaversion="5">
+<suite id="s1" name="Calculator Test" source="c:\Users\Administrateur\Desktop\Appium\Tests\calculator_test.robot">
+<test id="s1-t1" name="Test Open Calculator" line="15">
+<kw name="Open Calculator">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-03-14T11:38:52.041470" elapsed="7.278395"/>
+</kw>
+<status status="PASS" start="2025-03-14T11:38:52.040941" elapsed="7.279198"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T11:38:59.322000" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_1'.</msg>
+<msg time="2025-03-14T11:39:01.932608" level="INFO">criteria is com.google.android.calculator:id/digit_1</msg>
+<arg>id=com.google.android.calculator:id/digit_1</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T11:38:59.320667" elapsed="2.612353"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T11:39:01.935692" level="INFO">Clicking element 'id=com.google.android.calculator:id/op_add'.</msg>
+<msg time="2025-03-14T11:39:02.934963" level="INFO">criteria is com.google.android.calculator:id/op_add</msg>
+<arg>id=com.google.android.calculator:id/op_add</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T11:39:01.934048" elapsed="1.001174"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T11:39:02.937017" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_9'.</msg>
+<msg time="2025-03-14T11:39:03.582422" level="INFO">criteria is com.google.android.calculator:id/digit_9</msg>
+<arg>id=com.google.android.calculator:id/digit_9</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T11:39:02.935976" elapsed="0.646892"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T11:39:03.584496" level="INFO">Clicking element 'id=com.google.android.calculator:id/eq'.</msg>
+<msg time="2025-03-14T11:39:04.365353" level="INFO">criteria is com.google.android.calculator:id/eq</msg>
+<arg>id=com.google.android.calculator:id/eq</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T11:39:03.583400" elapsed="0.782191"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2025-03-14T11:39:04.367007" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '10'.</msg>
+<msg time="2025-03-14T11:39:04.436140" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
+<arg>id=com.google.android.calculator:id/result_final</arg>
+<arg>10</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="PASS" start="2025-03-14T11:39:04.366080" elapsed="0.070291"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-03-14T11:39:04.473334" level="INFO">Element 'id=com.google.android.calculator:id/result_final' text is '10' </msg>
+<msg time="2025-03-14T11:39:04.473529" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
+<msg time="2025-03-14T11:39:04.473655" level="INFO">${result} = 10</msg>
+<var>${result}</var>
+<arg>id=com.google.android.calculator:id/result_final</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2025-03-14T11:39:04.436870" elapsed="0.036848"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Le resultat affiché est : ${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-14T11:39:04.474153" elapsed="0.000547"/>
+</kw>
+<doc>Ouvrir l'application calculatrice</doc>
+<status status="PASS" start="2025-03-14T11:38:52.040274" elapsed="12.434752"/>
+</test>
+<status status="PASS" start="2025-03-14T11:38:51.894601" elapsed="12.581609"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Calculator Test" id="s1" pass="1" fail="0" skip="0">Calculator Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
