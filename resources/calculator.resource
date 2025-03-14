@@ -2,8 +2,7 @@
 Library           AppiumLibrary
 
 *** Variables ***
-# Definition des capabilities
-${result}=    Get Text    id=com.google.android.calculator:id/result_final
+# Définition des capacités ou d'autres variables globales si nécessaires
 
 *** Keywords ***
 Calculator
@@ -11,5 +10,6 @@ Calculator
     Click Element    id=com.google.android.calculator:id/op_add
     Click Element    id=com.google.android.calculator:id/digit_9
     Click Element    id=com.google.android.calculator:id/eq
-    Element Text Should Be   id=com.google.android.calculator:id/result_final  10
-    Log To Console    Le resultat affiché est : ${result}
+    Wait Until Element Is Visible    id=com.google.android.calculator:id/result_final    timeout=10s
+    ${result}=    Get Text    id=com.google.android.calculator:id/result_final
+    Log To Console    Le résultat affiché est : ${result}

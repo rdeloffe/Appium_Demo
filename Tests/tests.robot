@@ -7,6 +7,5 @@ Test Setup  Open
 
 *** Test Cases ***
 Test 1
-    # [Documentation]    Ouvrir l'application calculatrice
     Calculator
 

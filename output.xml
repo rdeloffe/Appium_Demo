@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-14T11:59:29.307505" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-14T12:05:41.257256" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="c:\Users\Administrateur\Desktop\Appium_Demo\Tests\tests.robot">
 <test id="s1-t1" name="Test 1" line="9">
 <kw name="Open" owner="lancement_mobile" type="SETUP">
@@ -18,57 +18,56 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-03-14T11:59:29.460384" elapsed="6.294506"/>
+<status status="PASS" start="2025-03-14T12:05:41.422604" elapsed="6.258544"/>
 </kw>
-<status status="PASS" start="2025-03-14T11:59:29.459853" elapsed="6.295309"/>
+<status status="PASS" start="2025-03-14T12:05:41.422050" elapsed="6.259331"/>
 </kw>
 <kw name="Calculator" owner="calculator">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-03-14T11:59:35.757667" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_1'.</msg>
-<msg time="2025-03-14T11:59:37.629939" level="INFO">criteria is com.google.android.calculator:id/digit_1</msg>
+<msg time="2025-03-14T12:05:47.683609" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_1'.</msg>
+<msg time="2025-03-14T12:05:49.561868" level="INFO">criteria is com.google.android.calculator:id/digit_1</msg>
 <arg>id=com.google.android.calculator:id/digit_1</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-03-14T11:59:35.756351" elapsed="1.873824"/>
+<status status="PASS" start="2025-03-14T12:05:47.682393" elapsed="1.879736"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-03-14T11:59:37.631030" level="INFO">Clicking element 'id=com.google.android.calculator:id/op_add'.</msg>
-<msg time="2025-03-14T11:59:38.208960" level="INFO">criteria is com.google.android.calculator:id/op_add</msg>
+<msg time="2025-03-14T12:05:49.563071" level="INFO">Clicking element 'id=com.google.android.calculator:id/op_add'.</msg>
+<msg time="2025-03-14T12:05:50.146879" level="INFO">criteria is com.google.android.calculator:id/op_add</msg>
 <arg>id=com.google.android.calculator:id/op_add</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-03-14T11:59:37.630328" elapsed="0.578834"/>
+<status status="PASS" start="2025-03-14T12:05:49.562313" elapsed="0.584784"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-03-14T11:59:38.210176" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_9'.</msg>
-<msg time="2025-03-14T11:59:38.815382" level="INFO">criteria is com.google.android.calculator:id/digit_9</msg>
+<msg time="2025-03-14T12:05:50.148012" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_9'.</msg>
+<msg time="2025-03-14T12:05:50.751101" level="INFO">criteria is com.google.android.calculator:id/digit_9</msg>
 <arg>id=com.google.android.calculator:id/digit_9</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-03-14T11:59:38.209369" elapsed="0.606212"/>
+<status status="PASS" start="2025-03-14T12:05:50.147256" elapsed="0.604055"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-03-14T11:59:38.816484" level="INFO">Clicking element 'id=com.google.android.calculator:id/eq'.</msg>
-<msg time="2025-03-14T11:59:39.597154" level="INFO">criteria is com.google.android.calculator:id/eq</msg>
+<msg time="2025-03-14T12:05:50.752294" level="INFO">Clicking element 'id=com.google.android.calculator:id/eq'.</msg>
+<msg time="2025-03-14T12:05:51.547613" level="INFO">criteria is com.google.android.calculator:id/eq</msg>
 <arg>id=com.google.android.calculator:id/eq</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-03-14T11:59:38.815724" elapsed="0.781650"/>
+<status status="PASS" start="2025-03-14T12:05:50.751486" elapsed="0.796365"/>
 </kw>
-<kw name="Element Text Should Be" owner="AppiumLibrary">
-<msg time="2025-03-14T11:59:39.598414" level="INFO">Verifying element 'id=com.google.android.calculator:id/result_final' contains exactly text '10'.</msg>
-<msg time="2025-03-14T11:59:39.647970" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-03-14T12:05:51.607909" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
 <arg>id=com.google.android.calculator:id/result_final</arg>
-<arg>10</arg>
-<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
-<status status="PASS" start="2025-03-14T11:59:39.597551" elapsed="0.050637"/>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-03-14T12:05:51.548093" elapsed="0.059996"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Le resultat affiché est : ${result}</arg>
+<arg>Le résultat affiché est : ${result}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-14T11:59:39.648370" elapsed="0.000403"/>
+<status status="PASS" start="2025-03-14T12:05:51.608241" elapsed="0.000431"/>
 </kw>
-<status status="PASS" start="2025-03-14T11:59:35.755816" elapsed="3.893083"/>
+<status status="PASS" start="2025-03-14T12:05:47.681903" elapsed="3.926974"/>
 </kw>
-<status status="PASS" start="2025-03-14T11:59:29.459068" elapsed="10.190102"/>
+<status status="PASS" start="2025-03-14T12:05:41.421335" elapsed="10.188043"/>
 </test>
-<status status="PASS" start="2025-03-14T11:59:29.310562" elapsed="10.339782"/>
+<status status="PASS" start="2025-03-14T12:05:41.260722" elapsed="10.350066"/>
 </suite>
 <statistics>
 <total>
